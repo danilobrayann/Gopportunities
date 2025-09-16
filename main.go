@@ -1,15 +1,7 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import "github.com/danilobrayann/Gopportunities.git/router"
 
 func main() {
-    router := gin.Default()
-
-    router.GET("/", func(c *gin.Context) {
-        c.JSON(200, gin.H{
-            "message": "Hello, Gin!",
-        })
-    })
-
-    router.Run(":8080") // roda em http://localhost:8080
+	router.Initilizer()
 }
